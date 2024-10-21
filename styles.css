@@ -1,0 +1,223 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+/* Variáveis de cor */
+:root {
+    --primary-color: #2f9234; /* Verde suave */
+    --primary-hover-color: #004d04; /* Verde suave mais escuro */
+    --text-color: #f4f4f4; /* Cinza claro */
+    --background-color: #1F1F1F; /* Preto */
+    --white-color: #FFFFFF;
+    --light-grey-color: #333333; /* Cinza escuro */
+    --border-color: #5c5c5c; /* Cinza claro */
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
+h1 {
+    text-align: center;
+    margin: 20px 0;
+    color: var(--primary-color);
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    background-color: var(--primary-color);
+    flex-wrap: wrap;
+    padding: 10px;
+    border-radius: 10px;
+    width: fit-content;
+    margin: 0 auto;
+}
+
+nav button {
+    color: var(--white-color);
+    background: none;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: all 0.3s ease;
+    margin: 5px;
+}
+
+nav button:hover {
+    background-color: var(--primary-hover-color);
+    transform: scale(1.1);
+}
+
+.tab-content {
+    display: none;
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+#emprestimos h2, #historico h2 {
+    margin-bottom: 20px;
+    color: var(--primary-color);
+}
+
+form {
+    background: var(--light-grey-color);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    margin-bottom: 20px;
+}
+
+form label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: var(--text-color);
+}
+
+form input[type="text"], form input[type="date"] {
+    width: 97%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 2px solid var(--border-color);
+    border-radius: 5px;
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
+form button {
+    background-color: var(--primary-color);
+    color: var(--white-color);
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+form button:hover {
+    background-color: var(--primary-hover-color);
+    transform: scale(1.1);
+}
+
+.search-input {
+    margin-bottom: 20px;
+    width: calc(100% - 20px);
+    padding: 10px;
+    border: 2px solid var(--border-color);
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    background-color: var(--background-color);
+    color: var(--text-color);
+    font-size: 16px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: var(--light-grey-color);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+th, td {
+    border: 2px solid var(--border-color);
+    padding: 12px 15px;
+    text-align: left;
+    color: var(--text-color);
+}
+
+th {
+    background-color: var(--primary-color);
+    color: var(--white-color);
+}
+
+tbody tr:nth-child(odd) {
+    background-color: var(--background-color);
+}
+
+button {
+    background-color: var(--primary-color);
+    color: var(--white-color);
+    border: none;
+    padding: 8px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    background-color: var(--primary-hover-color);
+    transform: scale(1.1);
+}
+
+.btn-clear {
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: var(--primary-color);
+    color: var(--white-color);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.btn-clear:hover {
+    background-color: var(--primary-hover-color);
+    transform: scale(1.1);
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        width: 100%;
+    }
+    form {
+        padding: 15px;
+    }
+    th, td {
+        padding: 10px;
+    }
+}
+
+@media (max-width: 576px) {
+    h1 {
+        font-size: 1.5em;
+    }
+    nav button {
+        padding: 10px 15px;
+    }
+    form {
+        padding: 10px;
+    }
+    form input[type="text"], form input[type="date"] {
+        padding: 8px;
+    }
+    form button {
+        padding: 8px 15px;
+    }
+    th, td {
+        padding: 8px;
+    }
+}
+nav button {
+    color: var(--white-color);
+    background: none;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: all 0.3s ease;
+    margin: 5px;
+}
+
+nav button:hover {
+    background-color: var(--primary-hover-color);
+    transform: scale(1.1);
+}
